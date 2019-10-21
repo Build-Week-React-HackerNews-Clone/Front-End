@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { link } from "";
 
 const initialState = {
   username: "",
@@ -20,13 +19,14 @@ const SignUp = () => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <h1>Create a New Account</h1>
       <div>
         <input
           type="text"
           name="username"
           placeholder="Username"
           onChange={handleChange}
-          value={users.username || ""}
+          value={users.username}
           required
         />
 
@@ -35,19 +35,20 @@ const SignUp = () => {
           name="email"
           placeholder="Email"
           onChange={handleChange}
-          value={users.email || ""}
+          value={users.email}
           required
         />
 
         <input
-          type="password"
+          type="text"
           name="password"
           placeholder="password"
           onChange={handleChange}
-          value={users.password || ""}
+          value={users.password}
           required
         />
-        <button type="submit">Log In</button>
+        <button type="submit">Sign Up</button>
+        <a>I am already Member</a>
       </div>
     </form>
   );

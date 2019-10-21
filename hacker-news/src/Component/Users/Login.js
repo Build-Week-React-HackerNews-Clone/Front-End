@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {link} from ''
+
 
 
 const initialState = {
@@ -7,7 +7,7 @@ const initialState = {
   password: ""
 };
 
-const Login = () => {
+const LogIn = () => {
   const [creds, setCreds] = useState(initialState);
 
   const handleChange = e => {
@@ -26,7 +26,7 @@ const Login = () => {
           name="username"
           placeholder="Username"
           onChange={handleChange}
-          value={creds.username || ''}
+          value={creds.username }
           required
         />
 
@@ -35,7 +35,7 @@ const Login = () => {
           name="password"
           placeholder="password"
           onChange={handleChange}
-          value={creds.password || ''}
+          value={creds.password }
           required
         />
         <button type="submit">Log In</button>
@@ -45,4 +45,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LogIn;
