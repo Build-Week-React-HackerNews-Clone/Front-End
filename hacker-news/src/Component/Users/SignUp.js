@@ -46,7 +46,7 @@ const SignUp = () => {
           onChange={handleChange}
           value={users.password}
         />
-        <button>Sign Up</button>
+        <button  type="submit">Sign Up</button>
       </div>
     </form>
   );
