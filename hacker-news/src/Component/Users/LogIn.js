@@ -27,19 +27,20 @@ const Login = () => {
           name="username"
           placeholder="Username"
           onChange={handleChange}
-          value={creds.username}
+          value={creds.username || ''}
           required
         />
 
         <input
-          type="text"
+          type="password"
           name="password"
           placeholder="password"
           onChange={handleChange}
-          value={creds.password}
+          value={creds.password || ''}
           required
         />
         <button type="submit">Log In</button>
+        <button type="submit">Sign Up</button>
       </div>
     </form>
   );
