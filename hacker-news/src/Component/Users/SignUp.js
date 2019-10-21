@@ -11,14 +11,10 @@ const SignUp = () => {
 
   const handleChange = e => {
     setUsers({ ...users, [e.target.name]: e.target.value });
-    console.log(e.target.value);
-    
   };
-  
 
   const handleSubmit = e => {
     event.preventDefault();
-    console.log(users);
   };
 
   return (
@@ -52,7 +48,7 @@ const SignUp = () => {
           required
         />
         <button type="submit">Sign Up</button>
-       <a>I am already Member</a>
+        <a>I am already Member</a>
       </div>
     </form>
   );
