@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const initialState = {
   username: "",
+  email:"",
   password: ""
 };
 
@@ -31,11 +32,11 @@ const SignUp = () => {
         />
 
         <input
-          type="Email"
+          type="email"
           name="email"
           placeholder="Email"
           onChange={handleChange}
-          value={users.username}
+          value={users.email}
         />
 
         <input
