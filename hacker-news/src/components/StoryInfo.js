@@ -7,7 +7,9 @@ const StoryInfo = (props) => {
 	}
 
 	return (
-		<div>{props.stories.map((story) => <h1 onClick={(ev) => routeToItem(ev, story)}>Name: {story.name}</h1>)}</div>
+		<div>
+			{props.stories.map((story) => <h1 onClick={(ev) => routeToItem(ev, story)}>Temp data: {story.name}</h1>)}
+		</div>
 	);
 };
 

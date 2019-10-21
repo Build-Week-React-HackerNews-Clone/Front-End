@@ -2,7 +2,7 @@ import React from 'react';
 
 const Story = (props) => {
 	function linkToHome() {
-		props.history.push(`/`);
+		props.history.push(`/home`);
 	}
 
 	return (
