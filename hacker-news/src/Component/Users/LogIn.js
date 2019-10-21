@@ -1,4 +1,4 @@
-import React, { setUser } from "react";
+import React, { useState } from "react";
 
 const initialState = {
   username: "",
@@ -6,7 +6,7 @@ const initialState = {
 };
 
 const Login = () => {
-  const [creds, setCreds] = setUser(initialState);
+  const [creds, setCreds] = useState(initialState);
 
   const handleChange = e => {
     setCreds({ ...creds, [e.target.name]: e.target.value });
@@ -24,18 +24,19 @@ const Login = () => {
         <input
           type="text"
           name="username"
-          placeholder="username"
+          placeholder="Username"
           onChange={handleChange}
           value={creds.username}
         />
+
         <input
           type="text"
           name="password"
           placeholder="password"
-          onchanged={handleChange}
+          onChange={handleChange}
           value={creds.password}
         />
-        <button type="submit">LogIn</button>
+        <button type="submit">Log In</button>
       </div>
     </form>
   );

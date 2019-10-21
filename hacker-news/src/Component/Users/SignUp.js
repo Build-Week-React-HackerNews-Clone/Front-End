@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const initialState = {
   username: "",
-  email:"",
+  email: "",
   password: ""
 };
 
@@ -46,7 +46,7 @@ const SignUp = () => {
           onChange={handleChange}
           value={users.password}
         />
-        <button  type="submit">Sign Up</button>
+        <button type="submit">Sign Up</button>
       </div>
     </form>
   );
