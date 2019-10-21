@@ -7,8 +7,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div>
         <SignUp />
+        </div>
+        <div>
         <Login />
+        </div>
       </div>
     );
   }

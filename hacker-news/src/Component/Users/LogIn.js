@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const initialState = {
   username: "",
   password: ""
@@ -27,6 +28,7 @@ const Login = () => {
           placeholder="Username"
           onChange={handleChange}
           value={creds.username}
+          required
         />
 
         <input
@@ -35,6 +37,7 @@ const Login = () => {
           placeholder="password"
           onChange={handleChange}
           value={creds.password}
+          required
         />
         <button type="submit">Log In</button>
       </div>

@@ -12,7 +12,9 @@ const SignUp = () => {
   const handleChange = e => {
     setUsers({ ...users, [e.target.name]: e.target.value });
     console.log(e.target.value);
+    
   };
+  
 
   const handleSubmit = e => {
     event.preventDefault();
@@ -29,6 +31,7 @@ const SignUp = () => {
           placeholder="Username"
           onChange={handleChange}
           value={users.username}
+          required
         />
 
         <input
@@ -37,6 +40,7 @@ const SignUp = () => {
           placeholder="Email"
           onChange={handleChange}
           value={users.email}
+          required
         />
 
         <input
@@ -45,6 +49,7 @@ const SignUp = () => {
           placeholder="password"
           onChange={handleChange}
           value={users.password}
+          required
         />
         <button type="submit">Sign Up</button>
       </div>
