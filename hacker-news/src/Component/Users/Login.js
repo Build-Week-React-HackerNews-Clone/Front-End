@@ -1,22 +1,21 @@
 import React, { useState } from "react";
 
 
+
 const initialState = {
   username: "",
   password: ""
 };
 
-const Login = () => {
+const LogIn = () => {
   const [creds, setCreds] = useState(initialState);
 
   const handleChange = e => {
     setCreds({ ...creds, [e.target.name]: e.target.value });
-    console.log(e.target.value);
   };
 
   const handleSubmit = e => {
     event.preventDefault();
-    console.log(creds);
   };
 
   return (
@@ -27,7 +26,7 @@ const Login = () => {
           name="username"
           placeholder="Username"
           onChange={handleChange}
-          value={creds.username || ''}
+          value={creds.username }
           required
         />
 
@@ -36,7 +35,7 @@ const Login = () => {
           name="password"
           placeholder="password"
           onChange={handleChange}
-          value={creds.password || ''}
+          value={creds.password }
           required
         />
         <button type="submit">Log In</button>
@@ -46,4 +45,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LogIn;
