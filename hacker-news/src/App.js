@@ -1,19 +1,22 @@
 import React, { Component } from "react";
 import SignUp from "./Component/Users/SignUp";
 import Login from "./Component/Users/Login";
+import Header from "./Component/header/Header";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <Router>
+        <Header/>
         <div>
-        <SignUp />
+        <Route exact path="/SignUp" component={SignUp} />
         </div>
         <div>
-        <Login />
+        <Route exact path="/login" component={Login} />
         </div>
-      </div>
+      </Router>
     );
   }
 }
