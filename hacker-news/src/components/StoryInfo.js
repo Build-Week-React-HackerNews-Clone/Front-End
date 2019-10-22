@@ -2,11 +2,6 @@ import React from 'react';
 import '../Story.css';
 
 const StoryInfo = (props) => {
-	function routeToItem(ev, item) {
-		ev.preventDefault();
-		props.history.push(`/story/${item.id}`);
-	}
-
 	//converts UNIX time to readable date format
 	function timePostedCalc(UNIX_timestamp) {
 		var d = new Date(UNIX_timestamp * 1000).toLocaleDateString('en-US');
