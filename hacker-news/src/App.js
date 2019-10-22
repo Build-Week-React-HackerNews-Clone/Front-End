@@ -27,14 +27,17 @@ class App extends Component {
 	}
 	render() {
 		return (
+			<div>
+				
 			<Router>
-				<Header />
+			<Header/>
 				<Route exact path="/SignUp" component={SignUp} />
 				<Route exact path="/login" component={LogIn} />
 				<Route exact path="/home" render={(props) => <Home {...props} data={this.state.data} />} />
 
 				<Route path="/story/:id" render={(props) => <Story {...props} data={this.state.data} />} />
 			</Router>
+			</div>
 		);
 	}
 }

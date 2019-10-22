@@ -29,6 +29,7 @@ const SignUp = () => {
     <form onSubmit={handleSubmit}>
       <div className="maindiv">
         <div className="firstdiv">hello</div>
+        <div className="inputfield">
         <div className="seconddiv">
           <h3>Create a New Account</h3>
           <div>
@@ -46,7 +47,7 @@ const SignUp = () => {
             />
           </div>
 
-          <div>Email</div>
+          <lable>Email</lable>
           <div>
             <input className="inputform"
               type="email"
@@ -58,7 +59,7 @@ const SignUp = () => {
             />
           </div>
 
-          <div>Password</div>
+          <lable>Password</lable>
           <div>
             <input className="inputform"
               type="password"
@@ -74,6 +75,7 @@ const SignUp = () => {
           <button  className ="button1" type="submit">Sign Up</button>
           <Link to="/LogIn"> I am already Member</Link>
           </div>
+        </div>
         </div>
     </form>
   );
