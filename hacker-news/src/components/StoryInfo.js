@@ -31,7 +31,7 @@ const StoryInfo = (props) => {
 						</div>
 						<div className="rightStory">
 							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
 							</a>
@@ -50,7 +50,7 @@ const StoryInfo = (props) => {
 						</div>
 						<div className="rightStory">
 							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
 							</a>
@@ -69,7 +69,7 @@ const StoryInfo = (props) => {
 						</div>
 						<div className="rightStory">
 							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
 							</a>
@@ -88,7 +88,7 @@ const StoryInfo = (props) => {
 						</div>
 						<div className="rightStory">
 							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
 							</a>
@@ -107,7 +107,7 @@ const StoryInfo = (props) => {
 						</div>
 						<div className="rightStory">
 							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
 							</a>
@@ -126,7 +126,7 @@ const StoryInfo = (props) => {
 						</div>
 						<div className="rightStory">
 							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
 							</a>
@@ -145,7 +145,7 @@ const StoryInfo = (props) => {
 						</div>
 						<div className="rightStory">
 							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
 							</a>
@@ -164,7 +164,7 @@ const StoryInfo = (props) => {
 						</div>
 						<div className="rightStory">
 							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
 							</a>
@@ -183,7 +183,7 @@ const StoryInfo = (props) => {
 						</div>
 						<div className="rightStory">
 							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
 							</a>
@@ -202,7 +202,7 @@ const StoryInfo = (props) => {
 						</div>
 						<div className="rightStory">
 							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
 							</a>
