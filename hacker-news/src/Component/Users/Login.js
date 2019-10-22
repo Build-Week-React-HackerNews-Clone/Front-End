@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link} from 'react-router-dom'
 
 const initialState = {
   username: "",
@@ -28,6 +29,7 @@ const LogIn = () => {
             placeholder="Username"
             onChange={handleChange}
             value={creds.username}
+            pattern="^[a-zA-Z0-9_.-]*$"
             required
           />
           <div>{setCreds.usernameError}</div>
@@ -44,7 +46,7 @@ const LogIn = () => {
             required
           />
           <button type="submit">Log In</button>
-          <button type="submit">Sign Up</button>
+          <Link to='/SignUp'><button type="submit">Sign Up</button></Link>
         </div>
       </div>
     </form>

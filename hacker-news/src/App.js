@@ -3,7 +3,7 @@ import LogIn from './Component/Users/Login';
 import SignUp from './Component/Users/SignUp';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Header from './Component/Users/header/Header';
+import Header from './Component/header/Header';
 import axios from 'axios';
 import Story from './components/Story';
 import Home from './components/Home';
