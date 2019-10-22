@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {Link} from 'react-router-dom';
-import axios from 'axios'
+import authWithAuth from '../utils/axiosWithAuth'
 
 const initialState = {
   username: "",
@@ -17,7 +17,14 @@ const LogIn = (props) => {
 
   const handleSubmit = e => {
     event.preventDefault();
-  
+    authWithAuth()
+      .post(`/auth/login`, creds)
+      .then(res => {
+        console.log("I am here", res);
+        props.history.push("/home");
+        
+        
+      });
   };
 
 

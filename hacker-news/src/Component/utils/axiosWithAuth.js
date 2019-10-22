@@ -6,7 +6,7 @@ import axios from "axios";
   return axios.create({
     baseURL: "https://hacked-news-app.herokuapp.com/api",
     headers: {
-      Authorization: token
+      Authorization: {token}
     }
   });
 };
