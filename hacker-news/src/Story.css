@@ -1,0 +1,19 @@
+.hackedTitle {
+	text-decoration: underline;
+	text-align: center;
+	margin: 70px 0;
+	font-size: 3rem;
+}
+
+.storyContainer {
+	display: flex;
+	border: 1px solid red;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.story {
+	border: 1px solid black;
+	width: 48%;
+	margin: 10px;
+}

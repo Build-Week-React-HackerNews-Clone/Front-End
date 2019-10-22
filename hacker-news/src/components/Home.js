@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import StoryInfo from './StoryInfo';
+import '../App.css';
 
 class Home extends Component {
 	componentDidMount() {
@@ -8,7 +9,7 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Home Page</h1>
+				<h1 className="hackedTitle">Hacked News</h1>
 				<StoryInfo stories={this.props.data} history={this.props.history} />
 			</div>
 		);
