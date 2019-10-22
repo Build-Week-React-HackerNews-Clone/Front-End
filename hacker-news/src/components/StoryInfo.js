@@ -7,19 +7,17 @@ const StoryInfo = (props) => {
 		props.history.push(`/story/${item.id}`);
 	}
 
-	//Converts UNIX time to readable date format
-	function timeConverter(UNIX_timestamp) {
-		var a = new Date(UNIX_timestamp * 1000);
-		var months = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ];
-		var year = a.getFullYear();
-		var month = months[a.getMonth()];
-		var date = a.getDate();
-		var time = month + ' ' + date + ' ' + year;
-		return time;
+	//converts UNIX time to readable date format
+	function timePostedCalc(UNIX_timestamp) {
+		var d = new Date(UNIX_timestamp * 1000).toLocaleDateString('en-US');
+		var t = new Date(UNIX_timestamp * 1000).toLocaleTimeString('en-US');
+
+		return d + ' at ' + t;
 	}
 
 	return (
 		<div className="storyContainer">
+			<h1 className="hackedTitle">Hacked News: Tops 20 Articles</h1>
 			{props.stories.map((story) => (
 				<div className="story">
 					<h1 className="Title">Title: {story.title}</h1>
@@ -30,7 +28,7 @@ const StoryInfo = (props) => {
 							<h2 className="Score">Score: {story.score}</h2>
 						</div>
 						<div className="rightStory">
-							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Date">Date posted: {timePostedCalc(story.time)}</h2>
 							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
@@ -49,7 +47,7 @@ const StoryInfo = (props) => {
 							<h2 className="Score">Score: {story.score}</h2>
 						</div>
 						<div className="rightStory">
-							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Date">Date posted: {timePostedCalc(story.time)}</h2>
 							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
@@ -68,7 +66,7 @@ const StoryInfo = (props) => {
 							<h2 className="Score">Score: {story.score}</h2>
 						</div>
 						<div className="rightStory">
-							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Date">Date posted: {timePostedCalc(story.time)}</h2>
 							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
@@ -87,7 +85,7 @@ const StoryInfo = (props) => {
 							<h2 className="Score">Score: {story.score}</h2>
 						</div>
 						<div className="rightStory">
-							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Date">Date posted: {timePostedCalc(story.time)}</h2>
 							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
@@ -106,7 +104,7 @@ const StoryInfo = (props) => {
 							<h2 className="Score">Score: {story.score}</h2>
 						</div>
 						<div className="rightStory">
-							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Date">Date posted: {timePostedCalc(story.time)}</h2>
 							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
@@ -125,7 +123,7 @@ const StoryInfo = (props) => {
 							<h2 className="Score">Score: {story.score}</h2>
 						</div>
 						<div className="rightStory">
-							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Date">Date posted: {timePostedCalc(story.time)}</h2>
 							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
@@ -144,7 +142,7 @@ const StoryInfo = (props) => {
 							<h2 className="Score">Score: {story.score}</h2>
 						</div>
 						<div className="rightStory">
-							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Date">Date posted: {timePostedCalc(story.time)}</h2>
 							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
@@ -163,7 +161,7 @@ const StoryInfo = (props) => {
 							<h2 className="Score">Score: {story.score}</h2>
 						</div>
 						<div className="rightStory">
-							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Date">Date posted: {timePostedCalc(story.time)}</h2>
 							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
@@ -182,7 +180,7 @@ const StoryInfo = (props) => {
 							<h2 className="Score">Score: {story.score}</h2>
 						</div>
 						<div className="rightStory">
-							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Date">Date posted: {timePostedCalc(story.time)}</h2>
 							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article
@@ -201,7 +199,7 @@ const StoryInfo = (props) => {
 							<h2 className="Score">Score: {story.score}</h2>
 						</div>
 						<div className="rightStory">
-							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Date">Date posted: {timePostedCalc(story.time)}</h2>
 							<h2 className="Number">Number of comments: {story.descendants}</h2>
 							<a className="Link" href={story.url}>
 								View Full Article

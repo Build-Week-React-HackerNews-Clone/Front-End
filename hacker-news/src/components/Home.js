@@ -9,7 +9,6 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<h1 className="hackedTitle">Hacked News: Tops 20 Articles</h1>
 				<StoryInfo stories={this.props.data} history={this.props.history} />
 			</div>
 		);
