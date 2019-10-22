@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import StoryInfo from './StoryInfo';
 
 class Home extends Component {
+	componentDidMount() {
+		console.log('home data', this.props.data);
+	}
 	render() {
 		return (
 			<div>
