@@ -18,16 +18,18 @@ const StoryInfo = (props) => {
 	}
 
 	return (
-		<div>
+		<div className="storyContainer">
 			{props.stories.map((story) => (
-				<div>
-					<h1>Title: {story.title}</h1>
-					<h2>Author: {story.by}</h2>
-					<h2>Type of article: {story.type}</h2>
-					<h2>Score: {story.score}</h2>
-					<h2>Date posted: {timeConverter(story.time)}</h2>
-					<h2>Number of comments: {story.kids.length}</h2>
-					<a href={story.url}>View Full Article</a>
+				<div className="story">
+					<h1 className="Title">Title: {story.title}</h1>
+					<h2 className="Author">Author: {story.by}</h2>
+					<h2 className="Type">Type of article: {story.type}</h2>
+					<h2 className="Score">Score: {story.score}</h2>
+					<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+					<h2 className="Number">Number of comments: {story.kids.length}</h2>
+					<a className="Link" href={story.url}>
+						View Full Article
+					</a>
 				</div>
 			))}
 		</div>
