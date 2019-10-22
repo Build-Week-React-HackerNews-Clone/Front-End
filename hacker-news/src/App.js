@@ -13,10 +13,6 @@ class App extends Component {
 		data: []
 	};
 
-	// https://reqres.in/api/unknown
-	// https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty
-	// item/21323663.json?print=pretty
-	// 21323736
 	componentDidMount() {
 		axios
 			.get(`https://hacker-news.firebaseio.com/v0/item/21323736.json?print=pretty`)
