@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import axios from 'axios'
 
 const initialState = {
   username: "",
@@ -7,7 +8,7 @@ const initialState = {
   
 };
 
-const LogIn = () => {
+const LogIn = (props) => {
   const [creds, setCreds] = useState(initialState);
 
   const handleChange = e => {
@@ -16,7 +17,9 @@ const LogIn = () => {
 
   const handleSubmit = e => {
     event.preventDefault();
+  
   };
+
 
   return (
     <form onSubmit={handleSubmit}>
