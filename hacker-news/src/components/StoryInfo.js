@@ -5,6 +5,8 @@ const StoryInfo = (props) => {
 		ev.preventDefault();
 		props.history.push(`/story/${item.id}`);
 	}
+
+	//Converts UNIX time to readable date format
 	function timeConverter(UNIX_timestamp) {
 		var a = new Date(UNIX_timestamp * 1000);
 		var months = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ];
@@ -19,7 +21,7 @@ const StoryInfo = (props) => {
 		<div>
 			{props.stories.map((story) => (
 				<div>
-					<h1 onClick={(ev) => routeToItem(ev, story)}>Title: {story.title}</h1>
+					<h1>Title: {story.title}</h1>
 					<h2>Author: {story.by}</h2>
 					<h2>Type of article: {story.type}</h2>
 					<h2>Score: {story.score}</h2>
