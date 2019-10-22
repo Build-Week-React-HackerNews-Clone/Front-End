@@ -23,131 +23,191 @@ const StoryInfo = (props) => {
 			{props.stories.map((story) => (
 				<div className="story">
 					<h1 className="Title">Title: {story.title}</h1>
-					<h2 className="Author">Author: {story.by}</h2>
-					<h2 className="Type">Type of article: {story.type}</h2>
-					<h2 className="Score">Score: {story.score}</h2>
-					<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-					<h2 className="Number">Number of comments: {story.kids.length}</h2>
-					<a className="Link" href={story.url}>
-						View Full Article
-					</a>
+					<div className="storyContent">
+						<div className="leftStory">
+							<h2 className="Author">Author: {story.by}</h2>
+							<h2 className="Type">Type of article: {story.type}</h2>
+							<h2 className="Score">Score: {story.score}</h2>
+						</div>
+						<div className="rightStory">
+							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<a className="Link" href={story.url}>
+								View Full Article
+							</a>
+						</div>
+					</div>
 				</div>
 			))}
 			{props.stories.map((story) => (
 				<div className="story">
 					<h1 className="Title">Title: {story.title}</h1>
-					<h2 className="Author">Author: {story.by}</h2>
-					<h2 className="Type">Type of article: {story.type}</h2>
-					<h2 className="Score">Score: {story.score}</h2>
-					<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-					<h2 className="Number">Number of comments: {story.kids.length}</h2>
-					<a className="Link" href={story.url}>
-						View Full Article
-					</a>
+					<div className="storyContent">
+						<div className="leftStory">
+							<h2 className="Author">Author: {story.by}</h2>
+							<h2 className="Type">Type of article: {story.type}</h2>
+							<h2 className="Score">Score: {story.score}</h2>
+						</div>
+						<div className="rightStory">
+							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<a className="Link" href={story.url}>
+								View Full Article
+							</a>
+						</div>
+					</div>
 				</div>
 			))}
 			{props.stories.map((story) => (
 				<div className="story">
 					<h1 className="Title">Title: {story.title}</h1>
-					<h2 className="Author">Author: {story.by}</h2>
-					<h2 className="Type">Type of article: {story.type}</h2>
-					<h2 className="Score">Score: {story.score}</h2>
-					<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-					<h2 className="Number">Number of comments: {story.kids.length}</h2>
-					<a className="Link" href={story.url}>
-						View Full Article
-					</a>
+					<div className="storyContent">
+						<div className="leftStory">
+							<h2 className="Author">Author: {story.by}</h2>
+							<h2 className="Type">Type of article: {story.type}</h2>
+							<h2 className="Score">Score: {story.score}</h2>
+						</div>
+						<div className="rightStory">
+							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<a className="Link" href={story.url}>
+								View Full Article
+							</a>
+						</div>
+					</div>
 				</div>
 			))}
 			{props.stories.map((story) => (
 				<div className="story">
 					<h1 className="Title">Title: {story.title}</h1>
-					<h2 className="Author">Author: {story.by}</h2>
-					<h2 className="Type">Type of article: {story.type}</h2>
-					<h2 className="Score">Score: {story.score}</h2>
-					<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-					<h2 className="Number">Number of comments: {story.kids.length}</h2>
-					<a className="Link" href={story.url}>
-						View Full Article
-					</a>
+					<div className="storyContent">
+						<div className="leftStory">
+							<h2 className="Author">Author: {story.by}</h2>
+							<h2 className="Type">Type of article: {story.type}</h2>
+							<h2 className="Score">Score: {story.score}</h2>
+						</div>
+						<div className="rightStory">
+							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<a className="Link" href={story.url}>
+								View Full Article
+							</a>
+						</div>
+					</div>
 				</div>
 			))}
 			{props.stories.map((story) => (
 				<div className="story">
 					<h1 className="Title">Title: {story.title}</h1>
-					<h2 className="Author">Author: {story.by}</h2>
-					<h2 className="Type">Type of article: {story.type}</h2>
-					<h2 className="Score">Score: {story.score}</h2>
-					<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-					<h2 className="Number">Number of comments: {story.kids.length}</h2>
-					<a className="Link" href={story.url}>
-						View Full Article
-					</a>
+					<div className="storyContent">
+						<div className="leftStory">
+							<h2 className="Author">Author: {story.by}</h2>
+							<h2 className="Type">Type of article: {story.type}</h2>
+							<h2 className="Score">Score: {story.score}</h2>
+						</div>
+						<div className="rightStory">
+							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<a className="Link" href={story.url}>
+								View Full Article
+							</a>
+						</div>
+					</div>
 				</div>
 			))}
 			{props.stories.map((story) => (
 				<div className="story">
 					<h1 className="Title">Title: {story.title}</h1>
-					<h2 className="Author">Author: {story.by}</h2>
-					<h2 className="Type">Type of article: {story.type}</h2>
-					<h2 className="Score">Score: {story.score}</h2>
-					<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-					<h2 className="Number">Number of comments: {story.kids.length}</h2>
-					<a className="Link" href={story.url}>
-						View Full Article
-					</a>
+					<div className="storyContent">
+						<div className="leftStory">
+							<h2 className="Author">Author: {story.by}</h2>
+							<h2 className="Type">Type of article: {story.type}</h2>
+							<h2 className="Score">Score: {story.score}</h2>
+						</div>
+						<div className="rightStory">
+							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<a className="Link" href={story.url}>
+								View Full Article
+							</a>
+						</div>
+					</div>
 				</div>
 			))}
 			{props.stories.map((story) => (
 				<div className="story">
 					<h1 className="Title">Title: {story.title}</h1>
-					<h2 className="Author">Author: {story.by}</h2>
-					<h2 className="Type">Type of article: {story.type}</h2>
-					<h2 className="Score">Score: {story.score}</h2>
-					<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-					<h2 className="Number">Number of comments: {story.kids.length}</h2>
-					<a className="Link" href={story.url}>
-						View Full Article
-					</a>
+					<div className="storyContent">
+						<div className="leftStory">
+							<h2 className="Author">Author: {story.by}</h2>
+							<h2 className="Type">Type of article: {story.type}</h2>
+							<h2 className="Score">Score: {story.score}</h2>
+						</div>
+						<div className="rightStory">
+							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<a className="Link" href={story.url}>
+								View Full Article
+							</a>
+						</div>
+					</div>
 				</div>
 			))}
 			{props.stories.map((story) => (
 				<div className="story">
 					<h1 className="Title">Title: {story.title}</h1>
-					<h2 className="Author">Author: {story.by}</h2>
-					<h2 className="Type">Type of article: {story.type}</h2>
-					<h2 className="Score">Score: {story.score}</h2>
-					<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-					<h2 className="Number">Number of comments: {story.kids.length}</h2>
-					<a className="Link" href={story.url}>
-						View Full Article
-					</a>
+					<div className="storyContent">
+						<div className="leftStory">
+							<h2 className="Author">Author: {story.by}</h2>
+							<h2 className="Type">Type of article: {story.type}</h2>
+							<h2 className="Score">Score: {story.score}</h2>
+						</div>
+						<div className="rightStory">
+							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<a className="Link" href={story.url}>
+								View Full Article
+							</a>
+						</div>
+					</div>
 				</div>
 			))}
 			{props.stories.map((story) => (
 				<div className="story">
 					<h1 className="Title">Title: {story.title}</h1>
-					<h2 className="Author">Author: {story.by}</h2>
-					<h2 className="Type">Type of article: {story.type}</h2>
-					<h2 className="Score">Score: {story.score}</h2>
-					<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-					<h2 className="Number">Number of comments: {story.kids.length}</h2>
-					<a className="Link" href={story.url}>
-						View Full Article
-					</a>
+					<div className="storyContent">
+						<div className="leftStory">
+							<h2 className="Author">Author: {story.by}</h2>
+							<h2 className="Type">Type of article: {story.type}</h2>
+							<h2 className="Score">Score: {story.score}</h2>
+						</div>
+						<div className="rightStory">
+							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<a className="Link" href={story.url}>
+								View Full Article
+							</a>
+						</div>
+					</div>
 				</div>
 			))}
 			{props.stories.map((story) => (
 				<div className="story">
 					<h1 className="Title">Title: {story.title}</h1>
-					<h2 className="Author">Author: {story.by}</h2>
-					<h2 className="Type">Type of article: {story.type}</h2>
-					<h2 className="Score">Score: {story.score}</h2>
-					<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
-					<h2 className="Number">Number of comments: {story.kids.length}</h2>
-					<a className="Link" href={story.url}>
-						View Full Article
-					</a>
+					<div className="storyContent">
+						<div className="leftStory">
+							<h2 className="Author">Author: {story.by}</h2>
+							<h2 className="Type">Type of article: {story.type}</h2>
+							<h2 className="Score">Score: {story.score}</h2>
+						</div>
+						<div className="rightStory">
+							<h2 className="Date">Date posted: {timeConverter(story.time)}</h2>
+							<h2 className="Number">Number of comments: {story.kids.length}</h2>
+							<a className="Link" href={story.url}>
+								View Full Article
+							</a>
+						</div>
+					</div>
 				</div>
 			))}
 		</div>
