@@ -3,7 +3,7 @@ import LogIn from './Component/Users/Login';
 import SignUp from './Component/Users/SignUp';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Header from './Component/Users/header/Header';
+import Header from './Component/header/Header';
 import axios from 'axios';
 import Story from './components/Story';
 import Home from './components/Home';
@@ -27,14 +27,17 @@ class App extends Component {
 	}
 	render() {
 		return (
+			<div>
+				
 			<Router>
-				<Header />
+			<Header/>
 				<Route exact path="/SignUp" component={SignUp} />
 				<Route exact path="/login" component={LogIn} />
 				<Route exact path="/home" render={(props) => <Home {...props} data={this.state.data} />} />
 
 				<Route path="/story/:id" render={(props) => <Story {...props} data={this.state.data} />} />
 			</Router>
+			</div>
 		);
 	}
 }

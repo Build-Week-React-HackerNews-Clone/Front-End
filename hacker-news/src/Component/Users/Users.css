@@ -1,0 +1,59 @@
+.maindiv {
+  height: 600px;
+  width: 100%;
+ 
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.inputfield {
+  background:#326089;
+  width: 730px;
+}
+
+.firstdiv {
+  background-color: #BF4718;
+  width: 49%;
+}
+
+.seconddiv {
+  margin-top: 200px;
+  margin-left: 20px;
+}
+
+.inputform {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid grey;
+  margin-top: 5px;
+  font-size: 16px;
+  width: 400px;
+  height: 30px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  color: blanchedalmond;
+}
+
+.button1 {
+  margin-top: 40px;
+  text-transform: uppercase;
+  background:  #BF4718;
+  padding: 20px;
+  width: 150px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 15px;
+  color: white;
+}
+
+lable,h3{
+    color:white;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}

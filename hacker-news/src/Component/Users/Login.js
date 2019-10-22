@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-
-
+import {Link} from 'react-router-dom';
+import authWithAuth from '../utils/axiosWithAuth'
 
 const initialState = {
   username: "",
-  password: ""
+  password: "", 
+  
 };
 
-const LogIn = () => {
+const LogIn = (props) => {
   const [creds, setCreds] = useState(initialState);
 
   const handleChange = e => {
@@ -16,30 +17,47 @@ const LogIn = () => {
 
   const handleSubmit = e => {
     event.preventDefault();
+    authWithAuth()
+      .post(`/auth/login`, creds)
+      .then(res => {
+        console.log("I am here", res);
+        props.history.push("/home");
+        
+        
+      });
   };
+
 
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <input
-          type="text"
-          name="username"
-          placeholder="Username"
-          onChange={handleChange}
-          value={creds.username }
-          required
-        />
-
-        <input
-          type="password"
-          name="password"
-          placeholder="password"
-          onChange={handleChange}
-          value={creds.password }
-          required
-        />
-        <button type="submit">Log In</button>
-        <button type="submit">Sign Up</button>
+        <div>
+          <label>Username</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Username"
+            onChange={handleChange}
+            value={creds.username}
+            pattern="^[a-zA-Z0-9_.-]*$"
+            required
+          />
+          <div>{setCreds.usernameError}</div>
+        </div>
+        <div>
+          <input
+            type="password"
+            name="password"
+            placeholder="password"
+            onChange={handleChange}
+            value={creds.password}
+            maxLength="24"
+            minLength="4"
+            required
+          />
+          <button type="submit">Log In</button>
+          <Link to='/SignUp'><button type="submit">Sign Up</button></Link>
+        </div>
       </div>
     </form>
   );
