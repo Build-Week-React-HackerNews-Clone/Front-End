@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 
-
-
 const initialState = {
   username: "",
-  password: ""
+  password: "", 
+  
 };
 
 const LogIn = () => {
@@ -21,25 +20,32 @@ const LogIn = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <input
-          type="text"
-          name="username"
-          placeholder="Username"
-          onChange={handleChange}
-          value={creds.username }
-          required
-        />
-
-        <input
-          type="password"
-          name="password"
-          placeholder="password"
-          onChange={handleChange}
-          value={creds.password }
-          required
-        />
-        <button type="submit">Log In</button>
-        <button type="submit">Sign Up</button>
+        <div>
+          <label>Username</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Username"
+            onChange={handleChange}
+            value={creds.username}
+            required
+          />
+          <div>{setCreds.usernameError}</div>
+        </div>
+        <div>
+          <input
+            type="password"
+            name="password"
+            placeholder="password"
+            onChange={handleChange}
+            value={creds.password}
+            maxlength="24"
+            minlength="4"
+            required
+          />
+          <button type="submit">Log In</button>
+          <button type="submit">Sign Up</button>
+        </div>
       </div>
     </form>
   );

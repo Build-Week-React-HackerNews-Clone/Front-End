@@ -40,11 +40,13 @@ const SignUp = () => {
         />
 
         <input
-          type="text"
+          type="password"
           name="password"
           placeholder="password"
           onChange={handleChange}
           value={users.password}
+          maxlength="24"
+          minlength="4"
           required
         />
         <button type="submit">Sign Up</button>
