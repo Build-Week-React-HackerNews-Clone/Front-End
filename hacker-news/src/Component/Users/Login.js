@@ -41,8 +41,8 @@ const LogIn = () => {
             placeholder="password"
             onChange={handleChange}
             value={creds.password}
-            maxlength="24"
-            minlength="4"
+            maxLength="24"
+            minLength="4"
             required
           />
           <button type="submit">Log In</button>

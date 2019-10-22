@@ -1,0 +1,15 @@
+.maindiv{
+   height:600px;
+    width:80%;
+    margin-left: 120px;
+    border:2px solid black;
+    display: flex; 
+     flex-direction: row;
+     margin-top: 60px;
+        
+}
+
+.firstdiv{
+   background-color:grey;
+   width:49%;
+}
