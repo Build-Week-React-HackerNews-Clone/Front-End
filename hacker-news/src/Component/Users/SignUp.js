@@ -9,7 +9,7 @@ const initialState = {
   password: ""
 };
 
-const SignUp = () => {
+const SignUp = (props) => {
   const [users, setUsers] = useState(initialState);
 
   const handleChange = e => {
@@ -22,13 +22,14 @@ const SignUp = () => {
       .post(`https://hacked-news-app.herokuapp.com/api/auth/register`, users)
       .then(res => {
         console.log("I am here", res);
+        props.history.push("/LogIn");
       });
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <div className="maindiv">
-        <div className="firstdiv">hello</div>
+        <div className="firstdiv"></div>
         <div className="inputfield">
         <div className="seconddiv">
           <h3>Create a New Account</h3>
@@ -36,7 +37,7 @@ const SignUp = () => {
             <lable>Username</lable>
           </div>
           <div>
-            <input className="inputform" 
+            <input className="inputform " 
               type="text"
               name="username"
               placeholder="Username"
@@ -49,7 +50,7 @@ const SignUp = () => {
 
           <lable>Email</lable>
           <div>
-            <input className="inputform"
+            <input className="inputform "
               type="email"
               name="email"
               placeholder="Email"
@@ -73,7 +74,7 @@ const SignUp = () => {
             />
           </div>
           <button  className ="button1" type="submit">Sign Up</button>
-          <Link to="/LogIn"> I am already Member</Link>
+          <Link to="/LogIn"> <a>I am already Member</a></Link>
           </div>
         </div>
         </div>

@@ -2,8 +2,23 @@
     background-image:url('https://cdn.pixabay.com/photo/2016/04/06/08/50/gears-1311171_960_720.jpg');
     height:100px;
     border:2px solid grey;
+    display:flex;
 }
 
 h1{
     color:white;
+    margin-top:40px;
+    margin-left: 20px;;
+}
+
+.headerdiv{
+    width:49%
+}
+
+.headerdiv2{
+    margin-left: 400px;
+    margin-top:50px;
+}
+Link,a{
+    margin-left: 20px;
 }
