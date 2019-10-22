@@ -13,3 +13,36 @@
    background-color:grey;
    width:49%;
 }
+
+.seconddiv{
+    margin-top:200px;
+    margin-left: 20px;
+}
+
+.inputform {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-top: 5px;
+    font-size: 16px;
+    width: 400px;
+    height: 30px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color:white;
+
+}
+
+
+.button1 {
+    margin-top: 40px;
+    text-transform: uppercase;
+    background: #16A493;
+    padding: 20px;
+    width: 200px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 15px;
+    color:white;
+}
