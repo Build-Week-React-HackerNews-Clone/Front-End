@@ -31,6 +31,7 @@ const LogIn = (props) => {
     <div className="formcontainer">
     <form onSubmit={handleSubmit}>
       <div className="maindiv">
+      <h3>LogIn Existing User</h3>
           <div>
           <label>Username</label>
           </div>
@@ -46,8 +47,8 @@ const LogIn = (props) => {
           <div>{setCreds.usernameError}</div>
         </div>
         <div>
-          <div>
-        <label>Password</label>
+          <div className="password">
+        <label >Password</label>
         </div>
           <input className="inputform " 
             type="password"
