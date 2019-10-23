@@ -1,0 +1,11 @@
+.header {
+	/* background:#FF6601; */
+	background: #326089;
+	height: 80px;
+	width: 100%;
+	display: flex;
+	color: white;
+}
+.headerdiv {
+	margin-left: 3%;
+}

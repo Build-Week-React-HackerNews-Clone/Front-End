@@ -1,0 +1,65 @@
+.hackedTitle {
+	text-decoration: underline;
+	text-align: center;
+	margin: 70px 0;
+	font-size: 3rem;
+	color: rgb(29, 29, 29);
+}
+
+.storyContainer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background: white;
+	width: 60%;
+	margin: 0 auto;
+	padding: 22px;
+}
+
+.story {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 20px;
+	background: rgba(33, 30, 23, .05);
+	color: black;
+	/* padding: 20px; */
+	padding-bottom: 3%;
+	border-radius: 10px;
+}
+.Title {
+	text-align: center;
+	font-weight: bold;
+	font-weight: 700;
+	color: white;
+	margin: 0;
+	margin-bottom: 2%;
+	/* background: #ff6601; */
+	background: #326089;
+	padding: 3% 0;
+}
+
+.Link {
+	font-size: 1.4rem;
+	/* color: black; */
+	color: #bf4718;
+	font-weight: 900;
+	text-decoration: underline;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: right;
+	margin-top: 3%;
+	margin-right: 2%;
+}
+
+.storyContent {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-size: .8rem;
+}
+
+.storyItem {
+	margin: 0.8% 2%;
+}
