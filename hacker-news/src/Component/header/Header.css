@@ -1,6 +1,7 @@
 .header{
     background-image:url('https://cdn.pixabay.com/photo/2016/04/06/08/50/gears-1311171_960_720.jpg');
     height:100px;
+    width:100%;
     border:2px solid grey;
     display:flex;
 }
