@@ -15,14 +15,14 @@ const StoryInfo = (props) => {
 			<h1 className="hackedTitle">Hacked News: Tops 20 Articles</h1>
 			{props.stories.map((story) => (
 				<div key={story.id} className="story">
-					<h1 className="Title">Title: {story.title}</h1>
+					<h1 className="Title">{story.title}</h1>
 					<div className="storyContent">
-						<h2 className="Author">Author: {story.by}</h2>
-						<h2 className="Type">Type of article: {story.type}</h2>
-						<h2 className="Score">Score: {story.score}</h2>
+						<h2 className="Author storyItem">Author: {story.by}</h2>
+						<h2 className="Type storyItem">Type of article: {story.type}</h2>
+						<h2 className="Score storyItem">Score: {story.score}</h2>
 
-						<h2 className="Date">Date posted: {timePostedCalc(story.time)}</h2>
-						<h2 className="Number">Number of comments: {story.descendants}</h2>
+						<h2 className="Date storyItem">Date posted: {timePostedCalc(story.time)}</h2>
+						<h2 className="Number storyItem">Number of comments: {story.descendants}</h2>
 						<a className="Link" href={story.url}>
 							View Full Article
 						</a>

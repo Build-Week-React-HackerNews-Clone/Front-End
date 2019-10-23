@@ -11,7 +11,6 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	/* background: #326089; */
 	background: white;
 	width: 60%;
 	margin: 0 auto;
@@ -22,19 +21,22 @@
 	width: 80%;
 	margin: 0 auto;
 	margin-top: 20px;
-	/* background: #bf4718; */
 	background: rgba(33, 30, 23, .05);
 	color: black;
-	padding: 30px;
+	/* padding: 20px; */
+	padding-bottom: 3%;
 	border-radius: 10px;
 }
 .Title {
 	text-align: center;
-	text-decoration: underline;
 	font-weight: bold;
-	font-weight: 900;
-	/* color: rgb(29, 29, 29); */
-	color: #326089;
+	font-weight: 700;
+	color: white;
+	margin: 0;
+	margin-bottom: 2%;
+	/* background: #ff6601; */
+	background: #326089;
+	padding: 3% 0;
 }
 
 .Link {
@@ -47,16 +49,17 @@
 	margin: 0;
 	width: 100%;
 	text-align: right;
+	margin-top: 3%;
+	margin-right: 2%;
 }
 
 .storyContent {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 	font-size: .8rem;
 }
 
-/* .leftStory,
-.rightStory {
-	min-width: 20%;
-} */
+.storyItem {
+	margin: 0.8% 2%;
+}
