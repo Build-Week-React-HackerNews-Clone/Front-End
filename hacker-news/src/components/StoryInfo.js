@@ -11,8 +11,6 @@ const StoryInfo = (props) => {
 	}
 
 	return (
-		//map through and display the temp data to show 20 articles in total until we get
-		//endpoints from back-end
 		<div className="storyContainer">
 			<h1 className="hackedTitle">Hacked News: Tops 20 Articles</h1>
 			{props.stories.map((story) => (
