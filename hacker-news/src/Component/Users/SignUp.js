@@ -34,7 +34,7 @@ const SignUp = (props) => {
         <div className="seconddiv">
           <h3>Create a New Account</h3>
           <div>
-            <lable>Username</lable>
+            <label>Username</label>
           </div>
           <div>
             <input className="inputform " 
@@ -48,7 +48,7 @@ const SignUp = (props) => {
             />
           </div>
 
-          <lable>Email</lable>
+          <label>Email</label>
           <div>
             <input className="inputform "
               type="email"
@@ -60,7 +60,7 @@ const SignUp = (props) => {
             />
           </div>
 
-          <lable>Password</lable>
+          <label>Password</label>
           <div>
             <input className="inputform"
               type="password"

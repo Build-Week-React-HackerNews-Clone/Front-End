@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {Link} from 'react-router-dom';
-import authWithAuth from '../utils/axiosWithAuth'
+import axiosWithAuth from '../utils/axiosWithAuth'
 
 const initialState = {
   username: "",
@@ -17,13 +17,11 @@ const LogIn = (props) => {
 
   const handleSubmit = e => {
     event.preventDefault();
-    authWithAuth()
+    axiosWithAuth()
       .post(`/auth/login`, creds)
       .then(res => {
-        console.log("I am here", res);
+        localStorage.setItem('token', res.data.token);
         props.history.push("/home");
-        
-        
       });
   };
 
@@ -36,7 +34,7 @@ const LogIn = (props) => {
         <div className="seconddiv">
         <div>
           <div>
-          <lable>Username</lable>
+          <label>Username</label>
           </div>
           <input className="inputform " 
             type="text"
@@ -51,7 +49,7 @@ const LogIn = (props) => {
         </div>
         <div>
           <div>
-        <lable>Password</lable>
+        <label>Password</label>
         </div>
           <input className="inputform " 
             type="password"

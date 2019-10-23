@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './Component/header/Header';
 import Story from './components/Story';
 import Home from './components/Home';
-import PrivateRoute from './Component/utils/PrivateRoute'
+import PrivateRoute from './Component/utils/PrivateRoute';
 import axios from 'axios';
 import './App.css';
 
@@ -18,8 +18,6 @@ class App extends Component {
 		axios
 			.get(`https://reqres.in/api/unknown`)
 			.then((response) => {
-				console.log(response.data.data);
-				console.log('home props', this.props);
 				this.setState({
 					data: response.data.data
 				});
@@ -35,7 +33,6 @@ class App extends Component {
 				<Route exact path="/SignUp" component={SignUp} />
 				<Route exact path="/login" component={LogIn} />
 				<PrivateRoute exact path="/home" render={(props) => <Home {...props} data={this.state.data} />} />
-
 				<Route path="/story/:id" render={(props) => <Story {...props} data={this.state.data} />} />
 			</Router>
 			</div>
