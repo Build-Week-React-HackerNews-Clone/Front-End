@@ -1,25 +1,26 @@
-.header{
-    background-image:url('https://cdn.pixabay.com/photo/2016/04/06/08/50/gears-1311171_960_720.jpg');
-    height:100px;
-    width:100%;
-    border:2px solid grey;
-    display:flex;
+.header {
+  background-image: url("https://cdn.pixabay.com/photo/2016/04/06/08/50/gears-1311171_960_720.jpg");
+  height: 80px;
+  width: 100%;
+  border: 2px solid grey;
+  display: flex;
 }
 
-h1{
-    color:white;
-    margin-top:40px;
-    margin-left: 20px;;
+h1 {
+  color: white;
+  margin-top: 40px;
+  margin-left: 20px;
 }
 
-.headerdiv{
-    width:49%
+.headerdiv {
+  width: 49%;
 }
 
-.headerdiv2{
-    margin-left: 400px;
-    margin-top:50px;
+.headerdiv2 {
+  margin-left: 400px;
+  margin-top: 50px;
 }
-Link,a{
-    margin-left: 20px;
+link,
+a {
+  margin-left: 20px;
 }
