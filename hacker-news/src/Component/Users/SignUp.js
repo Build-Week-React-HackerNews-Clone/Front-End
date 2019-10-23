@@ -9,7 +9,7 @@ const initialState = {
   password: ""
 };
 
-const SignUp = (props) => {
+const SignUp = props => {
   const [users, setUsers] = useState(initialState);
 
   const handleChange = e => {
@@ -27,58 +27,69 @@ const SignUp = (props) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="maindiv">
-        <div className="firstdiv"></div>
-        <div className="inputfield">
-        <div className="seconddiv">
-          <h3>Create a New Account</h3>
-          <div>
-            <lable>Username</lable>
-          </div>
-          <div>
-            <input className="inputform " 
-              type="text"
-              name="username"
-              placeholder="Username"
-              onChange={handleChange}
-              value={users.username}
-              pattern="^[a-zA-Z0-9_.-]*$"
-              required
-            />
-          </div>
+    <div className="formcontainer">
+      <form onSubmit={handleSubmit}>
+        <div className="maindiv">
+          <div className="seconddiv">
+            <h3>Create a New Account</h3>
+            <div>
+              <label>Username</label>
+            </div>
+            <div>
+              <input
+                className="inputform "
+                type="text"
+                name="username"
+                placeholder="Username"
+                onChange={handleChange}
+                value={users.username}
+                pattern="^[a-zA-Z0-9_.-]*$"
+                required
+              />
+            </div>
+            
+           <div className="password">
+            <label >Email</label>
+            </div>
+            <div>
+              <input
+                className="inputform "
+                type="email"
+                name="email"
+                placeholder="Email"
+                onChange={handleChange}
+                value={users.email}
+                required
+              />
+            </div>
 
-          <lable>Email</lable>
-          <div>
-            <input className="inputform "
-              type="email"
-              name="email"
-              placeholder="Email"
-              onChange={handleChange}
-              value={users.email}
-              required
-            />
-          </div>
-
-          <lable>Password</lable>
-          <div>
-            <input className="inputform"
-              type="password"
-              name="password"
-              placeholder="password"
-              onChange={handleChange}
-              value={users.password}
-              maxLength="24"
-              minLength="4"
-              required
-            />
-          </div>
-          <button  className ="button1" type="submit">Sign Up</button>
-          <Link to="/LogIn"> <a>I am already Member</a></Link>
+            <div className="password">
+              <label>Password</label>
+            </div>
+            <div>
+              <input
+                className="inputform"
+                type="password"
+                name="password"
+                placeholder="password"
+                onChange={handleChange}
+                value={users.password}
+                maxLength="24"
+                minLength="4"
+                required
+              />
+            </div>
+            <button className="button2" type="submit">
+              Sign Up
+            </button>
+            <Link to="/LogIn">
+              {" "}
+              <a>I am already Member</a>
+            </Link>
           </div>
         </div>
-        </div>
-    </form>
+      </form>
+    </div>
   );
 };
 
