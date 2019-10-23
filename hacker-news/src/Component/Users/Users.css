@@ -23,7 +23,6 @@
 }
 
 .inputform {
-  background: transparent;
   border: none;
   border-bottom: 1px solid grey;
   margin-top: 5px;
@@ -33,7 +32,6 @@
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  color: blanchedalmond;
 }
 
 .button1 {
