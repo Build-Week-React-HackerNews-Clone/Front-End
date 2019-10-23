@@ -1,30 +1,50 @@
-.maindiv {
-  height: 600px;
-  width: 100%;
- 
-  border: 2px solid black;
+
+.formcontainer {
   display: flex;
-  flex-direction: row;
-  
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
 }
 
-.inputfield {
-  background:#326089;
-  width: 730px;
+form {
+  background: rgba(33, 30, 23, 0.05);
+  padding: 2%;
+  border-radius: 10px;
 }
 
-.firstdiv {
-  background-color: #BF4718;
-  width: 49%;
+.button {
+ 
+  background-color: #326089;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 100px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: 0px solid white;
+
 }
 
-.seconddiv {
-  margin-top: 200px;
-  margin-left: 20px;
+.button2 {
+  background-color: #bf4718;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 120px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: 0px solid white;
+  margin-top: 3%;
+  margin-left: 10px;
 }
 
 .inputform {
-  background: transparent;
   border: none;
   border-bottom: 1px solid grey;
   margin-top: 5px;
@@ -34,26 +54,14 @@
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  color: blanchedalmond;
 }
 
-.button1 {
-  margin-top: 40px;
-  text-transform: uppercase;
-  background:  #BF4718;
-  padding: 20px;
-  width: 150px;
-  border-radius: 20px;
-  display: inline-block;
-  font-size: 15px;
-  color: white;
+.buttondiv{
+  text-align: center;
+  margin-top: 3%;
+
 }
 
-lable,h3{
-    color:white;
-}
-
-a{
-    color:white;
-    text-decoration: none;
+.password{
+  padding-top:15px;
 }

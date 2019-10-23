@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {Link} from 'react-router-dom';
-import authWithAuth from '../utils/axiosWithAuth'
+import axiosWithAuth from '../utils/axiosWithAuth'
 
 const initialState = {
   username: "",
@@ -17,23 +17,25 @@ const LogIn = (props) => {
 
   const handleSubmit = e => {
     event.preventDefault();
-    authWithAuth()
+    axiosWithAuth()
       .post(`/auth/login`, creds)
       .then(res => {
-        console.log("I am here", res);
+        localStorage.setItem('token', res.data.token);
         props.history.push("/home");
-        
-        
       });
   };
 
 
   return (
+  
+    <div className="formcontainer">
     <form onSubmit={handleSubmit}>
-      <div>
-        <div>
+      <div className="maindiv">
+      <h3>LogIn Existing User</h3>
+          <div>
           <label>Username</label>
-          <input
+          </div>
+          <input className="inputform " 
             type="text"
             name="username"
             placeholder="Username"
@@ -45,7 +47,10 @@ const LogIn = (props) => {
           <div>{setCreds.usernameError}</div>
         </div>
         <div>
-          <input
+          <div className="password">
+        <label >Password</label>
+        </div>
+          <input className="inputform " 
             type="password"
             name="password"
             placeholder="password"
@@ -55,11 +60,14 @@ const LogIn = (props) => {
             minLength="4"
             required
           />
-          <button type="submit">Log In</button>
-          <Link to='/SignUp'><button type="submit">Sign Up</button></Link>
-        </div>
-      </div>
+          <div className="buttondiv">
+          <button  className ="button" type="submit">Log In</button>
+          <Link to='/SignUp'><button  className ="button2" type="submit">Sign Up</button></Link>
+          </div>
+          </div>
     </form>
+    </div>
+    
   );
 };
 
