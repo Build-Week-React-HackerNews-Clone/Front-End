@@ -11,7 +11,8 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	background: #326089;
+	/* background: #326089; */
+	background: white;
 	width: 60%;
 	margin: 0 auto;
 	padding: 22px;
@@ -21,30 +22,41 @@
 	width: 80%;
 	margin: 0 auto;
 	margin-top: 20px;
-	background: #bf4718;
-	color: blanchedalmond;
+	/* background: #bf4718; */
+	background: rgba(33, 30, 23, .05);
+	color: black;
 	padding: 30px;
+	border-radius: 10px;
 }
 .Title {
 	text-align: center;
 	text-decoration: underline;
 	font-weight: bold;
 	font-weight: 900;
-	color: rgb(29, 29, 29);
+	/* color: rgb(29, 29, 29); */
+	color: #326089;
 }
 
 .Link {
 	font-size: 1.4rem;
-	color: blanchedalmond;
+	/* color: black; */
+	color: #bf4718;
 	font-weight: 900;
+	text-decoration: underline;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: right;
 }
 
 .storyContent {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size: .8rem;
 }
 
-.leftStory,
+/* .leftStory,
 .rightStory {
 	min-width: 20%;
-}
+} */
