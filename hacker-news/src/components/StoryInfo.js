@@ -16,7 +16,7 @@ const StoryInfo = (props) => {
 		<div className="storyContainer">
 			<h1 className="hackedTitle">Hacked News: Tops 20 Articles</h1>
 			{props.stories.map((story) => (
-				<div className="story">
+				<div key={story.id} className="story">
 					<h1 className="Title">Title: {story.title}</h1>
 					<div className="storyContent">
 						<div className="leftStory">
