@@ -30,10 +30,15 @@ const LogIn = (props) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div>
+      <div className="maindiv">
+      <div className="firstdiv"></div>
+      <div className="inputfield">
+        <div className="seconddiv">
         <div>
-          <label>Username</label>
-          <input
+          <div>
+          <lable>Username</lable>
+          </div>
+          <input className="inputform " 
             type="text"
             name="username"
             placeholder="Username"
@@ -45,7 +50,10 @@ const LogIn = (props) => {
           <div>{setCreds.usernameError}</div>
         </div>
         <div>
-          <input
+          <div>
+        <lable>Password</lable>
+        </div>
+          <input className="inputform " 
             type="password"
             name="password"
             placeholder="password"
@@ -55,9 +63,13 @@ const LogIn = (props) => {
             minLength="4"
             required
           />
-          <button type="submit">Log In</button>
-          <Link to='/SignUp'><button type="submit">Sign Up</button></Link>
+          <div>
+          <button  className ="button1" type="submit">Log In</button>
+          <Link to='/SignUp'><button  className ="button1" type="submit">Sign Up</button></Link>
+          </div>
         </div>
+      </div>
+      </div>
       </div>
     </form>
   );
