@@ -27,12 +27,10 @@ const LogIn = (props) => {
 
 
   return (
+  
+    <div className="formcontainer">
     <form onSubmit={handleSubmit}>
       <div className="maindiv">
-      <div className="firstdiv"></div>
-      <div className="inputfield">
-        <div className="seconddiv">
-        <div>
           <div>
           <label>Username</label>
           </div>
@@ -61,15 +59,14 @@ const LogIn = (props) => {
             minLength="4"
             required
           />
-          <div>
-          <button  className ="button1" type="submit">Log In</button>
-          <Link to='/SignUp'><button  className ="button1" type="submit">Sign Up</button></Link>
+          <div className="buttondiv">
+          <button  className ="button" type="submit">Log In</button>
+          <Link to='/SignUp'><button  className ="button2" type="submit">Sign Up</button></Link>
           </div>
-        </div>
-      </div>
-      </div>
-      </div>
+          </div>
     </form>
+    </div>
+    
   );
 };
 
