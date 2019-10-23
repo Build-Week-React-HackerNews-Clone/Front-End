@@ -1,0 +1,50 @@
+.hackedTitle {
+	text-decoration: underline;
+	text-align: center;
+	margin: 70px 0;
+	font-size: 3rem;
+	color: rgb(29, 29, 29);
+}
+
+.storyContainer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background: #326089;
+	width: 60%;
+	margin: 0 auto;
+	padding: 22px;
+}
+
+.story {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 20px;
+	background: #bf4718;
+	color: blanchedalmond;
+	padding: 30px;
+}
+.Title {
+	text-align: center;
+	text-decoration: underline;
+	font-weight: bold;
+	font-weight: 900;
+	color: rgb(29, 29, 29);
+}
+
+.Link {
+	font-size: 1.4rem;
+	color: blanchedalmond;
+	font-weight: 900;
+}
+
+.storyContent {
+	display: flex;
+	justify-content: space-between;
+}
+
+.leftStory,
+.rightStory {
+	min-width: 20%;
+}

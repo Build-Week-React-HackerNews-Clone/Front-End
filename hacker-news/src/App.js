@@ -4,7 +4,7 @@ import SignUp from './Component/Users/SignUp';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './Component/header/Header';
-import axios from 'axios';
+import axiosWithAuth from './Component/utils/axiosWithAuth';
 import Story from './components/Story';
 import Home from './components/Home';
 
@@ -14,13 +14,13 @@ class App extends Component {
 	};
 
 	componentDidMount() {
-		axios
-			.get(`https://reqres.in/api/unknown`)
+		axiosWithAuth()
+			.get(`/articles`)
 			.then((response) => {
-				console.log(response.data.data);
-				console.log('home props', this.props);
+				console.log('response', response);
+
 				this.setState({
-					data: response.data.data
+					data: response.data
 				});
 			})
 			.catch((err) => console.log(err.response));
@@ -28,15 +28,14 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				
-			<Router>
-			<Header/>
-				<Route exact path="/SignUp" component={SignUp} />
-				<Route exact path="/login" component={LogIn} />
-				<Route exact path="/home" render={(props) => <Home {...props} data={this.state.data} />} />
+				<Router>
+					<Header />
+					<Route exact path="/SignUp" component={SignUp} />
+					<Route exact path="/login" component={LogIn} />
+					<Route exact path="/home" render={(props) => <Home {...props} data={this.state.data} />} />
 
-				<Route path="/story/:id" render={(props) => <Story {...props} data={this.state.data} />} />
-			</Router>
+					<Route path="/story/:id" render={(props) => <Story {...props} data={this.state.data} />} />
+				</Router>
 			</div>
 		);
 	}
