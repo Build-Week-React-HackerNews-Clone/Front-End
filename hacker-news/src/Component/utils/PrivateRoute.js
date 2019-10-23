@@ -1,8 +1,8 @@
-import React from 'react';
-import {Route, Redirect} from 'react-router-dom';
+import React from "react";
+import { Route, Redirect } from "react-router-dom";
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
-<Route
+  <Route
     {...rest}
     render={props =>
       localStorage.getItem("token") ? (
@@ -12,6 +12,6 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
       )
     }
   />
-  );
+);
 
 export default PrivateRoute;
