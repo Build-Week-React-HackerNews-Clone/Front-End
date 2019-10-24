@@ -40,11 +40,14 @@ Used for decoding tokens received from the backend.
 
 ### Contributors
 
-|                                       [Tyler Thompson](https://github.com/tthompson082)                                        |                                      [Benita](https://github.com/bea03)                                        |                                       [Manju KC](https://github.com/Manjukcthapa)                                        |                                       [Adam Barnett](https://github.com/abarne)                                        |                                       [Rebecca Joyner](https://github.com/rebeccajoyner)                                        |
-|                                           [Michelangelo Mark](https://github.com/michelangelo17)
+|                                       [Tyler Thompson](https://github.com/tthompson082)                                        |                                      [Benita](https://github.com/bea03)                                        |                                       [Manju KC](https://github.com/Manjukcthapa)                                        |                                       [Adam Barnett](https://github.com/abarne)                                        |                                       [Rebecca Joyner](https://github.com/rebeccajoyner)                                        
+|                                           [Michelangelo Mark](https://github.com/michelangelo17)|
+
+
+
+### About ReactHacker News
+ReactHacker News is the app where we can see the Top 20 news about the IT field.
+
+
                   
 
-| :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
-|                      [<img src="https://mympydreamers-staging.netlify.com/static/media/Manju.9a555105.jpg" width = "200" />](https://github.com/Manjukcthapa)                       |                      
-
-<br>
