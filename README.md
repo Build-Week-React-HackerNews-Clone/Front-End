@@ -40,6 +40,7 @@ Used for decoding tokens received from the backend.
 
 ### Contributors
 
-[Manju KC](https://github.com/Manjukcthapa)                                        |                
+|                                       [Tyler Thompson](https://github.com/tthompson082)                                        |                                      [Benita] (https://github.com/bea03)(https://github.com/krislidimo)                                        |                                       [Manju KC](https://github.com/Manjukcthapa)                                        |                                       [Adam Barnett](https://github.com/abarne)                                        |                                       [Rebecca Joyner](https://github.com/rebeccajoyner)                                        |
+|                                           [Michelangelo Mark](https://github.com/michelangelo17)              
 
 
